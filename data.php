@@ -5,7 +5,7 @@ $names[] = 'Dewy';
 $names[] = 'Scott';
 $names[] = 'Mike';
 $names[] = 'Robert';
-$names[] = 'Artistotle';
+$names[] = 'Aristotle';
 $count   = 1;
 foreach($names as $name)
 {

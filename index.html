@@ -10,13 +10,14 @@
                     document.getElementById('test').innerHTML = req.responseText;
                 }
             }
-            req.open('GET','data.php?name=Christopher',true);
+            var search = document.getElementById('test1').value;
+            req.open('GET','data.php?name='+search, true);
             req.send();
         }
     </script>
 </head>
 <body>
-    <input type="text" onkeyup="ajax();">
+    <input type="text" onkeyup="ajax();" id="test1">
     <button onclick="ajax();">Click Me</button>
     <div id="test"></div>
 </body>
